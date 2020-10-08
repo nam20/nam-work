@@ -62,6 +62,12 @@
             :href="`http://search.career.co.kr/?kw=%uBCD1%uC5ED%uD2B9%uB840&page=1&sort=1&ac=&jc=&ct=&cr=&biz=&pay=`"
             target="_blank"
             >커리어</v-btn>
+            <v-btn
+            class="ma-2"
+            :href="`https://map.naver.com/v5/search/${search}?c=14141208.4375751,4517939.0043474,15,0,0,0,dh`"
+            target="_blank"
+            >네이버 지도</v-btn>
+            
         </v-card>
         
         
