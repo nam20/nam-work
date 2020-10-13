@@ -44,7 +44,7 @@
             >인크루트</v-btn>
             <v-btn
             class="ma-2"
-            :href="`https://www.jobplanet.co.kr/job/search?_rs_act=index&_rs_con=job&_rs_element=main_search_bar&q=${search}`"
+            :href="`https://www.jobplanet.co.kr/search?query=${search}&category=&_rs_con=companies&_rs_act=cover&_rs_element=main_search_bar`"
             target="_blank"
             >잡플래닛</v-btn>
             <v-btn
