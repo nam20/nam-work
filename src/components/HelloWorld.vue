@@ -111,7 +111,7 @@
         return this.search !== '' ? `https://www.wanted.co.kr/search?query=${this.search}` : 'https://www.wanted.co.kr/search?query=%EC%82%B0%EC%97%85%EA%B8%B0%EB%8A%A5%EC%9A%94%EC%9B%90'
       },
       incruitUrl(){
-        return this.search !== '' ? `https://search.incruit.com/list/search.asp?col=job&src=gsw*search&kw=${this.search}` : 'https://job.incruit.com/jobdb_list/searchjob.asp?occ1=150&kw=%BA%B4%BF%AA%C6%AF%B7%CA&rgn2=11&rgn2=18'
+        return this.search !== '' ? `https://search.incruit.com/list/search.asp?col=job&src=gsw*search&kw=${this.search}` : 'https://job.incruit.com/jobdb_list/searchjob.asp?jobty=3&rgn2=11&rgn2=18&occ1=150'
       },
       worknetUrl(){
         return this.search !== '' ? `https://www.work.go.kr/wnSearch/unifSrch.do?regDateStdt=&regDateEndt=&colName=tb_workinfo&srchDateSelected=all&sortField=RANK&sortOrderBy=DESC&searchDateInfo=&temp=&pageIndex=1&tabName=tb_workinfo&dtlSearch=&query=${this.search}&radio_period=on&srchStdt=&srchEndt=&reQuery=&agreeQuery=&prikeyQuery=&exceptQuery=`
