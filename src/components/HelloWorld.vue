@@ -19,7 +19,7 @@
             >사람인</v-btn>
             <v-btn
             class="ma-2"
-            :href="`http://www.jobkorea.co.kr/recruit/joblist?menucode=search`"
+            :href="`http://www.jobkorea.co.kr/Search/?stext=${search}`"
             target="_blank"
             >잡코리아</v-btn>
             <v-btn
@@ -34,7 +34,7 @@
             >로켓펀치</v-btn>
             <v-btn
             class="ma-2"
-            :href="`https://www.wanted.co.kr/search?query=${search}`"
+            :href="`https://www.wanted.co.kr/search?query=%EC%82%B0%EC%97%85%EA%B8%B0%EB%8A%A5%EC%9A%94%EC%9B%90`"
             target="_blank"
             >원티드</v-btn>
             <v-btn
