@@ -24,9 +24,15 @@
             >잡코리아</v-btn>
             <v-btn
             class="ma-2"
-            :href="`https://work.mma.go.kr/caisBYIS/search/byjjecgeomsaek.do?eopjong_gbcd=1&eopche_nm=${search}`"
+            :href="workmmaCompany"
             target="_blank"
-            >병역일터</v-btn>
+            >병역업체</v-btn>
+            <v-btn
+            class="ma-2"
+            :href="workmmaRecruit"
+            target="_blank"
+            >병역채용</v-btn>
+
             <v-btn
             class="ma-2"
             :href="rocketUrl"
@@ -111,6 +117,12 @@
         return this.search !== '' ? `https://www.work.go.kr/wnSearch/unifSrch.do?regDateStdt=&regDateEndt=&colName=tb_workinfo&srchDateSelected=all&sortField=RANK&sortOrderBy=DESC&searchDateInfo=&temp=&pageIndex=1&tabName=tb_workinfo&dtlSearch=&query=${this.search}&radio_period=on&srchStdt=&srchEndt=&reQuery=&agreeQuery=&prikeyQuery=&exceptQuery=`
           : 'https://www.work.go.kr/empInfo/empInfoSrch/list/dtlEmpSrchList.do?careerTo=&keywordJobCd=&occupation=&rot2WorkYn=&templateInfo=&payGbn=&resultCnt=10&keywordJobCont=&cert=&cloDateStdt=&moreCon=&minPay=&codeDepth2Info=11000&isChkLocCall=&sortFieldInfo=DATE&major=&resrDutyExcYn=&sortField=DATE&staArea=&sortOrderBy=DESC&keyword=&termSearchGbn=all&benefitSrchAndOr=O&disableEmpHopeGbn=&webIsOut=&actServExcYn=Y&keywordStaAreaNm=&maxPay=&emailApplyYn=&listCookieInfo=DTL&pageCode=&codeDepth1Info=11000&keywordEtcYn=&publDutyExcYn=&keywordJobCdSeqNo=&exJobsCd=&templateDepthNmInfo=&computerPreferential=&regDateStdt=&employGbn=&empTpGbcd=1%2C2&region=11000%2C41000&resultCntInfo=10&siteClcd=all&cloDateEndt=&sortOrderByInfo=DESC&currntPageNo=1&indArea=&careerTypes=&searchOn=Y&subEmpHopeYn=&academicGbn=&foriegn=&templateDepthNoInfo=&mealOfferClcd=&station=&moerButtonYn=Y&holidayGbn=&enterPriseGbn=all&academicGbnoEdu=noEdu&cloTermSearchGbn=all&keywordWantedTitle=&stationNm=&benefitGbn=&keywordFlag=&essCertChk=&isEmptyHeader=&depth2SelCode=&_csrf=d5596721-f1b3-49b0-aefa-28962c8a1bee&keywordBusiNm=&preferentialGbn=all&rot3WorkYn=&pfMatterPreferential=&regDateEndt=&staAreaLineInfo1=11000&staAreaLineInfo2=1&pageIndex=1&termContractMmcnt=&careerFrom=&laborHrShortYn=#viewSPL'
       },
+      workmmaCompany(){
+        return this.search !== '' ? `https://work.mma.go.kr/caisBYIS/search/byjjecgeomsaek.do?eopjong_gbcd=1&eopche_nm=${this.search}` : 'https://work.mma.go.kr/caisBYIS/search/byjjecgeomsaek.do?eopjong_gbcd=1&eopjong_gbcd_list=11111,11112&bjinwonym=H&sido_addr=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C'
+      },
+      workmmaRecruit(){
+        return this.search !== '' ? `https://work.mma.go.kr/caisBYIS/search/cygonggogeomsaek.do?eopjong_gbcd=1&eopche_nm=${this.search}` : 'https://work.mma.go.kr/caisBYIS/search/cygonggogeomsaek.do?eopjong_gbcd=1&eopjong_gbcd_list=11111,11112&yeokjong_brcd=006'
+      }
       
 
     },
